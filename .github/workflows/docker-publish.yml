@@ -7,9 +7,9 @@ name: Docker
 
 on:
   push:
-    branches:
-      - main
-      - 'releases/**'
+    tags:
+      - '*'
+
 env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
